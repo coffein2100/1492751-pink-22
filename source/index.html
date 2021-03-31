@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -41,28 +43,28 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение Pink - раскрась серые будни</h1>
       <section class="intro">
+        <h1 class="visually-hidden">Приложение Pink - раскрась серые будни</h1>
         <div class="intro__wrapper">
-          <header class="intro__header">
-            <h2 class="visually-hidden">
-              описание сервиса
-            </h2>
-            <p class="intro__head">
-              Взгляните на жизнь<br>иначе!
-            </p>
-          </header>
+          <h2 class="visually-hidden">
+            описание сервиса
+          </h2>
+          <p class="intro__head">
+            Взгляните на жизнь<br>иначе!
+          </p>
+        </div>
+        <div class="intro__wrapperbottom">
           <button class="intro__button" type="button">Скачать приложение</button>
           <img src="img/apple-logo.svg" width="47" height="56" alt="apple logo">
           <img src="img/android-logo.svg" width="43" height="47" alt="android logo">
           <img src="img/microsoft-logo.svg" width="44" height="41" alt="microsoft logo">
-          </div>
           <p class="intro__available">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="advantages__header">Устали от серости мегаполиса?<br>Нам есть, что вам<br> предложить!</p>
+          <p class="advantages__header">Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!</p>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title advantages__item--Cheersup">Поднимает настроение</h3>
@@ -77,7 +79,7 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <div class="study">
+          <div class="study visually-hidden">
             <h3 class="study__head">Эффект на 24 часа!</h3>
             <p class="study__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="study__link" href="#">Узнать больше об исследовании</a>
@@ -85,21 +87,22 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper slider"></div>
-        <h2 class="visually-hidden">Отзовы</h2>
-        <div class="reviews__list">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзовы</h2>
+          <div class="reviews__list">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </blockquote>
-        </div>
-        <p class="reviews__toggles slider__toggles">
+          </div>
+          <p class="reviews__toggles slider__toggles">
           <button class="reviews__toggle slider__toggle--current" type="button">1</button>
           <button class="reviews__toggle" type="button">2</button>
           <button class="reviews__toggle" type="button">3</button>
-        </p>
+          </p>
+        </div>
       </section>
       <section class="price">
         <h2 class="visually-hidden">Прайс</h2>
@@ -147,7 +150,7 @@
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
-              <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts__adress">ул. Большая<br> Конюшенная, 19/8</p>
             </li>
           </ul>
           <img class="contacts__map" src="img/map.jpg" width="320" height="200" alt="расположение на карте">
@@ -155,8 +158,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <img src="img/pinkfooter-logo.svg" height="40" width="145" alt="40">
       <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/pinkfooter-logo.svg" height="40" width="145" alt="40">
         <div class="page-footer__social">
           <ul class="social__list">
             <li class="social__item">
