@@ -5,6 +5,8 @@
     <title>HTML Academy: Пинк конкурс</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -55,16 +57,16 @@
         <form class="form formcontest__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="form__section">
           <div class="formcontest__wrapper">
-            <label class="form__title" for="secondname">ФАМИЛИЯ:</label>
+            <label class="form__title title--first" for="secondname">ФАМИЛИЯ:</label>
             <input class="form__datainput" id="secondname" type="text" name="secondname" placeholder="Укажите фамилию *">
             <label class="form__title" for="name">ИМЯ:</label>
             <input class="form__datainput" id="name" type="text" name="name" placeholder="Введите ваше имя *">
             <label class="form__title" for="firstname">ОТЧЕСТВО:</label>
-            <input class="form__datainput" id="firstname" type="text" name="firstname" placeholder="Ну и отчество тоже">
+            <input class="form__datainput datainput--firstname" id="firstname" type="text" name="firstname" placeholder="Ну и отчество тоже">
           </div>
           </fieldset>
           <fieldset class="form__section">
-            <legend class="form__header">Ваши безбашенные<br> достижения в путешествии</legend>
+            <p class="form__header">Ваши безбашенные<br> достижения в путешествии</p>
             <div class="formcontest__wrapper">
               <ul class="form__listprogress">
                 <li class="form__item">
@@ -95,37 +97,37 @@
             </div>
           </fieldset>
           <fieldset class="form__section">
-            <legend class="form__header visually-hidden">контактная информация</legend>
+            <p class="form__header visually-hidden">контактная информация</p>
             <div class="formcontest__wrapper">
-              <label class="form__title" for="phone">НОМЕР ТЕЛЕФОНА</label>
+              <label class="form__title title--phone" for="phone">НОМЕР ТЕЛЕФОНА</label>
               <input class="form__datainput" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
               <label class="form__title" for="email">АДРЕС ПОЧТЫ</label>
-              <input class="form__datainput" id="email" type="text" name="email" placeholder="Введите почту *">
+              <input class="form__datainput datainput--email" id="email" type="text" name="email" placeholder="Введите почту *">
             </div>
           </fieldset>
           <fieldset class="form__section">
-            <legend class="form__header">С каким приложением<br> путешествовали?</legend>
+            <p class="form__header">С каким приложением<br> путешествовали?</p>
             <div class="formcontest__wrapper">
               <ul class="form__listdevice">
                 <li class="form__item">
                   <input class="form__dataradio" type="radio" name="device" value="IOS" id="IOS" checked>
-                  <label class="form__label" for="IOS">Pink для iOS</label>
+                  <label class="form__label label--radio" for="IOS">Pink для iOS</label>
                 </li>
                 <li class="form__item">
                   <input class="form__dataradio" type="radio" name="device" value="Android" id="Android">
-                  <label class="form__label" for="Android">Pink на Android</label>
+                  <label class="form__label label--radio" for="Android">Pink на Android</label>
                 </li>
                 <li class="form__item">
                   <input class="form__dataradio" type="radio" name="device" value="WindowsPhone" id="WindowsPhone">
-                  <label class="form__label" for="WindowsPhone">Windows Phone</label>
+                  <label class="form__label label--radio" for="WindowsPhone">Windows Phone</label>
                 </li>
               </ul>
             </div>
           </fieldset>
           <fieldset class="form__section">
-            <legend class="form__header">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+            <p class="form__header header--emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
             <div class="formcontest__wrapper">
-              <textarea class="form__datainput" rows="5" id="textlatters" name="laters" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="form__datainput datainput--big" rows="5" id="textlatters" name="laters" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           <div class="formcontest__wrapper">
