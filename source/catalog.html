@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк конкурс</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
       <img src="img/pinkhead-logo.svg" width="74" height="23" alt="pink">
       </a>
       <nav class="main-nav">
@@ -17,17 +21,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">
+              <a href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">
+              <a href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="form.html">
                 конкурс
               </a>
             </li>
@@ -48,73 +52,83 @@
       </section>
       <section class="photousers">
         <div class="photousers__wrapper">
-          <h2 class="photousers__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          <h2 class="photousers__header">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</h2>
         </div>
-        <img class="photousers__panoram" src="img/panorama.jpg" width="320" height="137" alt="panorama">
+        <a class="photousers__link" href="#"><img class="photousers__panoram" src="img/panorama.jpg" width="320" height="137" alt="panorama"></a>
         <div class="photousers__panoramcomments">
-          <blockquote class="photousers__comment">
-            <div class="photousers__wrapper">
-              <cite class="photousers__name">Анна</cite>
-              <span class="photousers__timepost">(5 минут назад)</span>
-              <p class="photousers__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <span class="photousers__likes">Нравится: 215</span>
-            </div>
+          <blockquote class="photousers__commentpanoram">
+            <cite class="photousers__name">Анна</cite>
+            <span class="photousers__timepost">(5 минут назад)</span>
+            <p class="photousers__text">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="photousers__likes">Нравится: 215</span>
           </blockquote>
         </div>
         <div class="photousers__wrapper">
           <ul class="photousers__list">
             <li class="photousers_item">
               <blockquote class="photousers__comment">
-                <img class="photousers__photo" src="img/car.jpg" width="280" height="180" alt="">
-                <cite class="photousers__name">Левон</cite>
-                <span class="photousers__timepost">(5 часов назад)</span>
-                <p class="photousers__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="photousers__likes">Нравится: 356</span>
+                <a class="photousers__link" href="#"><img class="photousers__photo" src="img/car.jpg" width="280" height="180" alt=""></a>
+                <div class="photousers__wrappercomment wrappercomment--first">
+                  <cite class="photousers__name">Левон</cite>
+                  <span class="photousers__timepost">(5 часов назад)</span>
+                  <p class="photousers__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="photousers__likes">Нравится: 356</span>
+                </div>
               </blockquote>
             </li>
             <li class="photousers_item">
               <blockquote class="photousers__comment">
-                <img class="photousers__photo" src="img/drums.jpg" width="280" height="180" alt="">
-                <cite class="photousers__name">Антон</cite>
-                <span class="photousers__timepost">(12 часов назад)</span>
-                <p class="photousers__text">Соседи будут рады!</p>
-                <span class="photousers__likes">Нравится: 666</span>
+                <a class="photousers__link" href="#"><img class="photousers__photo" src="img/drums.jpg" width="280" height="180" alt=""></a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Антон</cite>
+                  <span class="photousers__timepost">(12 часов назад)</span>
+                  <p class="photousers__text">Соседи будут рады!</p>
+                  <span class="photousers__likes">Нравится: 666</span>
+                </div>
               </blockquote>
             </li>
             <li class="photousers_item">
               <blockquote class="photousers__comment">
-                <img class="photousers__photo" src="img/windows.jpg" width="280" height="180" alt="">
-                <cite class="photousers__name">Борис</cite>
-                <span class="photousers__timepost">(20 часов назад)</span>
-                <p class="photousers__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <span class="photousers__likes">Нравится: 215</span>
+                <a class="photousers__link" href="#"><img class="photousers__photo" src="img/windows.jpg" width="280" height="180" alt=""></a>
+                <div class="photousers__wrappercomment wrappercomment--advertising">
+                  <cite class="photousers__name">Борис</cite>
+                  <span class="photousers__timepost">(20 часов назад)</span>
+                  <p class="photousers__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <span class="photousers__likes">Нравится: 215</span>
+                </div>
               </blockquote>
             </li>
             <li class="photousers_item">
               <blockquote class="photousers__comment">
-                <img class="photousers__photo" src="img/kuban.jpg" width="280" height="180" alt="">
-                <cite class="photousers__name">Сергей</cite>
-                <span class="photousers__timepost">(25 часов назад)</span>
-                <p class="photousers__text">Самая кубанская в мире!</p>
-                <span class="photousers__likes">Нравится: 4</span>
+                <a class="photousers__link" href="#"><img class="photousers__photo" src="img/kuban.jpg" width="280" height="180" alt=""></a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Сергей</cite>
+                  <span class="photousers__timepost">(25 часов назад)</span>
+                  <p class="photousers__text">Самая кубанская в мире!</p>
+                  <span class="photousers__likes">Нравится: 4</span>
+                </div>
               </blockquote>
             </li>
             <li class="photousers_item">
               <blockquote class="photousers__comment">
-                <img class="photousers__photo" src="img/mountain.jpg" width="280" height="180" alt="">
-                <cite class="photousers__name">Максим</cite>
-                <span class="photousers__timepost">(40 часов назад)</span>
-                <p class="photousers__text">Где снег-то?</p>
-                <span class="photousers__likes">Нравится: 150</span>
+                <a class="photousers__link" href="#"><img class="photousers__photo" src="img/mountain.jpg" width="280" height="180" alt=""></a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Максим</cite>
+                  <span class="photousers__timepost">(40 часов назад)</span>
+                  <p class="photousers__text">Где снег-то?</p>
+                  <span class="photousers__likes">Нравится: 150</span>
+                </div>
               </blockquote>
             </li>
             <li class="photousers_item">
               <blockquote class="photousers__comment">
-                <img class="photousers__photo" src="img/plane.jpg" width="280" height="180" alt="">
-                <cite class="photousers__name">Надежда</cite>
-                <span class="photousers__timepost">(45 часов назад)</span>
-                <p class="photousers__text">Всем GM и взаимные лайки!</p>
-                <span class="photousers__likes">Нравится: 2560</span>
+                <a class="photousers__link" href="#"><img class="photousers__photo" src="img/plane.jpg" width="280" height="180" alt=""></a>
+                <div class="photousers__wrappercomment">
+                  <cite class="photousers__name">Надежда</cite>
+                  <span class="photousers__timepost">(45 часов назад)</span>
+                  <p class="photousers__text">Всем GM и взаимные лайки!</p>
+                  <span class="photousers__likes">Нравится: 2560</span>
+                </div>
               </blockquote>
             </li>
           </ul>
@@ -122,13 +136,17 @@
       </section>
       <section class="userload">
         <div class="userload__wrapper">
-          <h2 class="userload__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-          <div class="userload__filterphoto">
+          <h2 class="userload__header">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h2>
+        </div>
+        <div class="userload__filterphoto">
+          <div class="userload__wrapper">
             <img class="userload__photo" src="img/winter.jpg" width="280" height="374" alt="">
-            <img class="userload__filtericon--current" src="img/scale.svg" width="44" height="44" alt="">
-            <img class="userload__filtericon" src="img/saturation.svg" width="44" height="44" alt="">
-            <img class="userload__filtericon" src="img/contrast.svg" width="44" height="44" alt="">
-            <div class="userload__scale--current">
+            <ul class="userload__filterlist">
+              <li class="filterlist__item"><img class="userload__filtericon filtericon--current" src="img/scale.svg" width="44" height="44" alt=""></li>
+              <li class="filterlist__item"><img class="userload__filtericon" src="img/saturation.svg" width="48" height="43" alt=""></li>
+              <li class="filterlist__item"><img class="userload__filtericon" src="img/contrast.svg" width="32" height="32" alt=""></li>
+            </ul>
+            <div class="userload__scale scale--current">
               <div class="userload__bar">
               </div>
               <div class="userload__toggle"></div>
@@ -136,15 +154,15 @@
             <div class="userload__scale">
               <div class="userload__bar">
               </div>
-              <div class="userload__toggle"></div>
+            <div class="userload__toggle"></div>
             </div>
             <div class="userload__scale">
               <div class="userload__bar">
               </div>
-              <div class="userload__toggle"></div>
+            <div class="userload__toggle"></div>
             </div>
             <button class="userload__button" type="button">Запостить</button>
-            <button class="userload__button" type="button" disabled>Отмена</button>
+            <button class="userload__button button--cancel" type="button" disabled>Отмена</button>
           </div>
         </div>
       </section>
