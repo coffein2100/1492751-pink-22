@@ -1,19 +1,44 @@
 .price {
   margin: 0;
-  padding: 0;
+  padding-top: 70px;
+  height: 300px;
+  background-color: @coloradvantages;
 }
 
 .price__header {
+  display: none;
+  height: 70px;
+  width: 280px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   color: @colorwhite;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+  }
+}
+
+.price__header--current {
+  padding-top: 20px;
+  display: block;
 }
 
 .price__item:nth-child(1) {
   background-color: @specionalcolor;
+}
+
+.price__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .price__value {
@@ -26,10 +51,34 @@
 }
 
 .price__text {
+  height: 30px;
+  padding-top: 5px;
+  display: none;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: @specionalcolor;
   text-align: left;
+  background-color: @colorwhite;
+  border: 2px solid @colorformborder;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 145px;
+  }
+}
+
+.price__text--current {
+  display: block;
+}
+
+.price__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
 }

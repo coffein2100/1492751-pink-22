@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,19 +55,21 @@
           </p>
         </div>
         <div class="intro__wrapperbottom">
-          <button class="intro__button" type="button">Скачать приложение</button>
-          <ul class="intro__list">
-            <li class="list__item"><img src="img/apple-logo.svg" width="47" height="56" alt="apple logo"></li>
-            <li class="list__item"><img src="img/android-logo.svg" width="43" height="47" alt="android logo"></li>
-            <li class="list__item"><img src="img/microsoft-logo.svg" width="44" height="41" alt="microsoft logo"></li>
-          </ul>
-          <p class="intro__available">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+          <div class="intro__wrapper">
+            <button class="intro__button" type="button" onclick="window.location.href = 'https://www.apple.com/ru/app-store/';">Скачать приложение</button>
+            <ul class="intro__list">
+              <li class="list__item"><a href="https://www.apple.com/ru/app-store/"><img src="img/apple-logo.svg" width="47" height="56" alt="apple logo"></a></li>
+              <li class="list__item"><a href="https://play.google.com/store/apps;hl=ru?hl=ru&gl=US"><img src="img/android-logo.svg" width="43" height="47" alt="android logo"></a></li>
+              <li class="list__item"><a href="https://www.microsoft.com/ru-RU/store/apps"><img src="img/microsoft-logo.svg" width="44" height="41" alt="microsoft logo"></a></li>
+            </ul>
+            <p class="intro__available">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <div class="advantages__wrapper">
-          <p class="advantages__header">Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!</p>
+          <p class="advantages__header">Устали от серости мегаполиса?<br>Нам есть, что вам<br> предложить!</p>
         </div>
         <div class="advantages__bottom">
           <div class="advantages__wrapper">
@@ -84,11 +87,11 @@
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <div class="study visually-hidden">
+          </div>
+          <div class="study">
               <h3 class="study__head">Эффект на 24 часа!</h3>
               <p class="study__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a class="study__link" href="#">Узнать больше об исследовании</a>
-            </div>
           </div>
         </div>
       </section>
@@ -97,8 +100,9 @@
         <div class="reviews__wrapper slider">
           <div class="reviews__list">
           <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <cite class="reviews__author-name">Николай Петров</cite>
+            <div class="reviews__author">
+              <cite class="reviews__authorname">Николай Петров</cite>
+              <p class="reviews__authorold">25 лет, водитель трамвая</p>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </blockquote>
@@ -115,28 +119,32 @@
         <div class="price__wrapper">
           <table class="price__table slider">
             <tr class="price__item slider__item">
+              <th class="price__header"></th>
               <th class="price__header">База <span class="price__value">1,99 USD</span></th>
-              <th class="price__header slider__item--current">СТАНДАРТ <span class="price__value">3,99 USD</span></th>
+              <th class="price__header price__header--current">СТАНДАРТ <span class="price__value">3,99 USD</span></th>
               <th class="price__header">АНЛИМ <span class="price__value">9,99 USD</span></th>
             </tr>
             <tr class="price__item slider__item">
               <td class="price__text">Розовый фильтр</td>
-              <td class="price__text slider__item--current">Розовый фильтр</td>
+              <td class="price__text">Розовый фильтр</td>
+              <td class="price__text price__text--current">Розовый фильтр</td>
               <td class="price__text">Розовый фильтр</td>
             </tr>
             <tr class="price__item slider__item">
               <td class="price__text">Смайлики</td>
-              <td class=" price__text slider__item--current">Смайлики</td>
+              <td class="price__text">Смайлики</td>
+              <td class=" price__text price__text--current">Смайлики</td>
               <td class="price__text">Смайлики</td>
             </tr>
             <tr class="price__item slider__item">
               <td class="price__text">Комментарии</td>
-              <td class="price__text slider__item--current">Комментарии</td>
+              <td class="price__text">Комментарии</td>
+              <td class="price__text price__text--current">Комментарии</td>
               <td class="price__text">Комментарии</td>
             </tr>
           </table>
           <p class="price__toggles slider__toggles">
-            <button class="price__toggle " type="button">1</button>
+            <button class="price__toggle" type="button">1</button>
             <button class="price__toggle slider__toggle--current" type="button">2</button>
             <button class="price__toggle" type="button">3</button>
           </p>
@@ -160,8 +168,8 @@
               <p class="contacts__adress">ул. Большая<br> Конюшенная, 19/8</p>
             </li>
           </ul>
-          <img class="contacts__map" src="img/map.jpg" width="320" height="200" alt="расположение на карте">
         </div>
+        <div class="contacts__map"></div>
       </section>
     </main>
     <footer class="page-footer">

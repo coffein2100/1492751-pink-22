@@ -4,6 +4,15 @@
   padding: 0;
   height: 673px;
   background-image: url("../img/backgroundhead.jpg");
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 653px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 643px;
+  }
 }
 
 .intro__head {
@@ -16,14 +25,49 @@
   padding-right: 20px;
   padding-top: 29px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 102px;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 114px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.intro__wrapper {
+  margin: 0;
+  margin-left: 20px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 120px;
+  }
 }
 
 .intro__wrapperbottom {
   position: absolute;
   height: 273px;
-  width: 320px;
+  width: 100%;
   bottom: 0;
   background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    background-color:inherit;
+    height: 373px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 300px;
+  }
 }
 
 .intro__button {
@@ -34,11 +78,15 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 16px 36px 14px 36px;
+  padding: 16px 20px 14px 20px;
   margin-top: 30px;
   margin-left: 20px;
   background-color: transparent;
   color: @colorwhite;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 30px 14px 30px;
+  }
 }
 
 .intro__available {

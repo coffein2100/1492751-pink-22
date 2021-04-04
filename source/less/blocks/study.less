@@ -1,3 +1,40 @@
 .study {
+  height: 290px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 62px;
+    display: block;
+    padding-left: 310px;
+    background-color: @colorwhite;
+  }
+}
+
+.study__head {
   display: block;
+  width: 168px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: @colorblack;
+}
+
+.study__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @specionalcolor;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.study__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @colorformtitle;
+  text-decoration: underline;
 }

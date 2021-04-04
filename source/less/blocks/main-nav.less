@@ -2,3 +2,23 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 900px;
+    display: flex;
+  }
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__toggle{
+    display: none;
+  }
+}
