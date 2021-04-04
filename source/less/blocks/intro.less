@@ -1,7 +1,9 @@
 .intro {
+  position: relative;
   margin: 0 auto;
   padding: 0;
-  background: url("../img/backgroundhead.jpg") no-repeat;
+  height: 673px;
+  background-image: url("../img/backgroundhead.jpg");
 }
 
 .intro__head {
@@ -17,6 +19,10 @@
 }
 
 .intro__wrapperbottom {
+  position: absolute;
+  height: 273px;
+  width: 320px;
+  bottom: 0;
   background-color: #1d2631;
 }
 
@@ -28,7 +34,8 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 21px 39px 21px 38px;
+  padding: 16px 36px 14px 36px;
+  margin-top: 30px;
   margin-left: 20px;
   background-color: transparent;
   color: @colorwhite;
@@ -40,4 +47,18 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+.intro__list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-top: 35px;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.list__item {
+  display: block;
+  margin: auto;
 }
