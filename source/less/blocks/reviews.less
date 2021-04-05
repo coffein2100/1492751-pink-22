@@ -1,6 +1,6 @@
 .reviews {
   margin-top: 50px;
-  height: 350px;
+  height: 300px;
 }
 
 .reviews__author {
@@ -34,6 +34,10 @@
     order: 3;
     padding-left: 220px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 390px;
+  }
 }
 
 .reviews__text {
@@ -62,5 +66,15 @@
 
   @media (min-width: @tablet-width) {
     width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+.reviews__list {
+  @media (min-width: @desktop-width) {
+    margin-top: 100px;
   }
 }
