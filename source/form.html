@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк конкурс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,16 +48,20 @@
     <main class="page-main">
       <h1 class="visually-hidden">Заявка на конкурс</h1>
       <section class="formintro">
-        <h2 class="formintro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <div class="formintro__wrapper">
+          <h2 class="formintro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
       </section>
       <section class="formcontest">
         <h2 class="visually-hidden">Форма участия</h2>
         <div class="formcontest__wrapper">
-          <p class="formcontest__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000<br> миль на вашу бонусную карту!</p>
+          <p class="formcontest__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту!
+            <span class="formcontest__headerbottom">Пожалуйста, заполните форму ниже:</span>
+          </p>
         </div>
-        <form class="form formcontest__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
-          <fieldset class="form__section">
-          <div class="formcontest__wrapper">
+        <form class="formcontest__form form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+          <fieldset class="form__section section--first">
+          <div class="form__wrapper">
             <label class="form__title title--first" for="secondname">ФАМИЛИЯ:</label>
             <input class="form__datainput" id="secondname" type="text" name="secondname" placeholder="Укажите фамилию *">
             <label class="form__title" for="name">ИМЯ:</label>
@@ -65,9 +70,10 @@
             <input class="form__datainput datainput--firstname" id="firstname" type="text" name="firstname" placeholder="Ну и отчество тоже">
           </div>
           </fieldset>
-          <fieldset class="form__section">
-            <p class="form__header">Ваши безбашенные<br> достижения в путешествии</p>
-            <div class="formcontest__wrapper">
+          <fieldset class="form__section section--color">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <p class="form__header">Ваши безбашенные достижения в путешествии</p>
+            <div class="form__wrapper">
               <ul class="form__listprogress">
                 <li class="form__item">
                   <input class="form__datacheck" type="checkbox" name="selfi" id="selfi" checked>
@@ -97,17 +103,18 @@
             </div>
           </fieldset>
           <fieldset class="form__section">
-            <p class="form__header visually-hidden">контактная информация</p>
-            <div class="formcontest__wrapper">
+            <legend class="form__legend">контактная информация</legend>
+            <div class="form__wrapper">
               <label class="form__title title--phone" for="phone">НОМЕР ТЕЛЕФОНА</label>
               <input class="form__datainput" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
               <label class="form__title" for="email">АДРЕС ПОЧТЫ</label>
               <input class="form__datainput datainput--email" id="email" type="text" name="email" placeholder="Введите почту *">
             </div>
           </fieldset>
-          <fieldset class="form__section">
-            <p class="form__header">С каким приложением<br> путешествовали?</p>
-            <div class="formcontest__wrapper">
+          <fieldset class="form__section section--color">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <p class="form__header">С каким приложением путешествовали?</p>
+            <div class="form__wrapper">
               <ul class="form__listdevice">
                 <li class="form__item">
                   <input class="form__dataradio" type="radio" name="device" value="IOS" id="IOS" checked>
@@ -125,14 +132,15 @@
             </div>
           </fieldset>
           <fieldset class="form__section">
+            <legend class="form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
             <p class="form__header header--emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
-            <div class="formcontest__wrapper">
+            <div class="form__wrapper">
               <textarea class="form__datainput datainput--big" rows="5" id="textlatters" name="laters" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
-          <div class="formcontest__wrapper">
+          <div class="form__wrapperbottom">
             <button class="button" type="submit">Отправить форму</button>
-            <p class="form__legend">
+            <p class="form__info">
             <small>
               <span class="form_specional">*</span> — обязательные поля
             </small>
@@ -164,8 +172,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <img src="img/pinkfooter-logo.svg" height="40" width="145" alt="40">
       <div class="page-footer__wrapper">
+        <img class="page-footer__logo" src="img/pinkfooter-logo.svg" height="40" width="145" alt="40">
         <div class="page-footer__social">
           <ul class="social__list">
             <li class="social__item">
