@@ -1,5 +1,32 @@
 .page-header {
+  height: 320px;
   margin: 0;
   padding: 0;
   background: @specionalcolor;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 341px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+  }
+
+  .page-header__logo {
+    margin-left: 130px;
+  }
 }

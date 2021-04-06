@@ -11,10 +11,28 @@
 
 .site-list__item a {
   display: block;
+  height: 50px;
+  padding-top: 15px;
   text-decoration: none;
   color: @colorwhite;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item a {
+    box-shadow: none;
+  }
+
+  .site-list {
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 220px;
+    text-transform: none;
+    line-height: 18px;
+  }
+
+  .site-list__item {
+    margin-right: 70px;
+  }
 }

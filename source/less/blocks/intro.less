@@ -1,7 +1,18 @@
 .intro {
+  position: relative;
   margin: 0 auto;
   padding: 0;
-  background: url("../img/backgroundhead.jpg") no-repeat;
+  height: 673px;
+  background-image: url("../img/backgroundhead.jpg");
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 653px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 643px;
+  }
 }
 
 .intro__head {
@@ -14,10 +25,48 @@
   padding-right: 20px;
   padding-top: 29px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 102px;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 114px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.intro__wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 120px;
+  }
 }
 
 .intro__wrapperbottom {
+  position: absolute;
+  height: 273px;
+  width: 100%;
+  bottom: 0;
   background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    background-color: inherit;
+    height: 373px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 300px;
+  }
 }
 
 .intro__button {
@@ -28,10 +77,15 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 21px 39px 21px 38px;
+  padding: 16px 20px 14px 20px;
+  margin-top: 30px;
   margin-left: 20px;
   background-color: transparent;
   color: @colorwhite;
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 30px 14px 30px;
+  }
 }
 
 .intro__available {
@@ -40,4 +94,18 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+}
+
+.intro__list {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-top: 35px;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+.list__item {
+  display: block;
+  margin: auto;
 }

@@ -1,3 +1,88 @@
 .study {
+  height: 290px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 62px;
+    display: block;
+    background-color: @colorwhite;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 290px;
+    background-color: @coloradvantages;
+  }
+}
+
+.study__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
+.study__head {
   display: block;
+  width: 168px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: @colorblack;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    padding-left: 350px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.study__text {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @specionalcolor;
+  padding-right: 20px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 534px;
+    padding-left: 350px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.study__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: @colorformtitle;
+  text-decoration: underline;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 270px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 350px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
