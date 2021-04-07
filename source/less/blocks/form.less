@@ -83,7 +83,6 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    margin-left: 22px;
     border: 2px solid @colorformborder;
     border-radius: 1px;
     margin-bottom: 40px;
@@ -99,9 +98,10 @@
 
 .form__section:nth-child(4) {
   @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
     width: 431px;
     height: 297px;
-    margin-left: 74px;
     margin-top: 25px;
 
     .form__wrapper {
@@ -118,8 +118,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-left: 130px;
-    width: 431px;
+    width: 396px;
 
     .form__wrapper {
       width: 431px;
@@ -231,10 +230,13 @@
 
 .form {
   @media (min-width: @tablet-width) {
+    width: 616px;
+    margin: 0 auto;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     .form__section:nth-child(1) {
       order: 1;
@@ -263,5 +265,6 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    width: 936px;
   }
 }

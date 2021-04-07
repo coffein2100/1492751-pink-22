@@ -8,9 +8,13 @@
 }
 
 .page-header__logo {
+  display: block;
   margin-top: 25px;
   margin-left: 20px;
   height: 23px;
+
+  @media (min-width: @desktop-width) {
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -25,8 +29,13 @@
     flex-direction: row;
     height: 90px;
   }
+}
 
-  .page-header__logo {
-    margin-left: 130px;
+.page__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 936px;
+    margin: 0 auto;
   }
 }
