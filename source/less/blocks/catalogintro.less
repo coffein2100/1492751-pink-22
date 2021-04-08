@@ -1,13 +1,26 @@
 .catalogintro {
   height: 236px;
-  width: 320px;
+  width: 100%;
   background: url("../img/backgroundhead.jpg") no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 336px;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 306px;
+  }
 }
 
 .catalogintro__wrapper {
   margin: 0 auto;
   padding: 0;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
 }
 
 .catalogintro__header {
@@ -19,4 +32,10 @@
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
+
