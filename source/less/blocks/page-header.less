@@ -1,5 +1,5 @@
 .page-header {
-  height: 320px;
+  height: 326px;
   margin: 0;
   padding: 0;
   background: @specionalcolor;
@@ -8,6 +8,7 @@
 }
 
 .page-header__logo {
+  display: block;
   margin-top: 25px;
   margin-left: 20px;
   height: 23px;
@@ -25,8 +26,13 @@
     flex-direction: row;
     height: 90px;
   }
+}
 
-  .page-header__logo {
-    margin-left: 130px;
+.page__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 936px;
+    margin: 0 auto;
   }
 }

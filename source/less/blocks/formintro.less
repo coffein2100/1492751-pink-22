@@ -1,7 +1,12 @@
 .formintro {
-  height: 236px;
-  width: 320px;
-  background: url("../img/backgroundhead.jpg") no-repeat;
+  height: 216px;
+  width: 100%;
+  background: url("../img/backgroundhead.jpg");
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 316px;
+  }
 }
 
 .formintro__header {
@@ -11,8 +16,20 @@
   font-size: 24px;
   line-height: 33px;
   margin: 0;
-  padding-top: 86px;
+  padding-top: 46px;
   text-align: center;
-  padding-left: 16px;
-  padding-right: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.formintro__wrapper {
+  width: 228px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
 }

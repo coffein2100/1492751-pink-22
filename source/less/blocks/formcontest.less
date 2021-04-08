@@ -8,10 +8,32 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.formcontest__headerbottom {
+  display: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: @specionalcolor;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .formcontest__wrapper {
   margin: 0 auto;
   padding: 0;
   width: 276px;
+
+  @media (min-width: @tablet-width) {
+    width: 490px;
+  }
 }

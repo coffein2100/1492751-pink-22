@@ -10,6 +10,15 @@
   text-transform: uppercase;
   border: 2px solid @colorbutton;
   border-radius: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 45%;
+    padding: 13px 20px 13px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 30%;
+  }
 }
 
 .button__modal {
