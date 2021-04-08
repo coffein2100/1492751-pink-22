@@ -1,7 +1,19 @@
 .modalfailure {
   display: none;
   height: 289px;
+  position: relative;
   box-shadow: 0 12px 20px 0 rgba(84, 49, 49, 0.18);
+
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 393px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 347px;
+    width: 780px;
+  }
 }
 
 .modalfailure__title {
@@ -13,6 +25,11 @@
   text-align: center;
   padding-top: 44px;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modalfailure__text {
@@ -24,9 +41,38 @@
   line-height: 24px;
   color: @specionalcolor;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .modalfailure__wrapper {
   width: 276px;
-  margin: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 351px;
+  }
+}
+
+.modal--failure {
+  @media (min-width: @desktop-width) {
+    width: 296px;
+    margin-left: 27px;
+  }
+}
+
+.modalfailure__wrapperbottom {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 0;
+    height: 163px;
+    width: 100%;
+    background-color: @coloradvantages;
+  }
 }
