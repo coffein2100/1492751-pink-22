@@ -3,27 +3,54 @@
   margin: 0 auto;
   padding: 0;
   height: 673px;
-  background-image: url("../img/backgroundhead.jpg");
-  background-size: cover;
+  background-image: url("../img/indexmobile-head.jpg");
+  background-clip: inherit;
+  background-repeat: no-repeat;
+  background-position: inherit;
 
   @media (min-width: @tablet-width) {
     height: 653px;
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) {
     height: 643px;
+    background-image: url("../img/indexdesktop-head.jpg");
   }
 }
 
+.intro::before {
+  content: "";
+  position: absolute;
+  bottom: 270px;
+  left: -150px;
+  width: 390px;
+  height: 286px;
+  background-image: url("../img/headphone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  bottom: 346px;
+  left: 101px;
+  width: 104px;
+  height: 182px;
+  background-image: url("../img/headscreenpink.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .intro__head {
   margin: 0;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
-  padding-left: 20px;
+  padding-left: 31px;
   padding-right: 20px;
-  padding-top: 29px;
+  padding-top: 32px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -76,11 +103,10 @@
   font-size: 18px;
   line-height: 18px;
   border: 3px solid #ffffff;
-  box-sizing: border-box;
   border-radius: 29px;
-  padding: 16px 20px 14px 20px;
+  padding: 16px 38px 14px 32px;
   margin-top: 30px;
-  margin-left: 20px;
+  text-align: center;
   background-color: transparent;
   color: @colorwhite;
 
@@ -100,10 +126,12 @@
 .intro__list {
   padding: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
   margin-top: 35px;
-  padding-left: 39px;
-  padding-right: 39px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 .list__item {

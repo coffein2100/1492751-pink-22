@@ -1,30 +1,24 @@
 .page-header {
-  height: 326px;
   margin: 0;
   padding: 0;
+  width: 100%;
   background: @specionalcolor;
   display: flex;
   flex-direction: column;
 }
 
 .page-header__logo {
-  display: block;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 20px;
   height: 23px;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header {
-    height: 341px;
-  }
+  width: 74px;
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     display: flex;
     flex-direction: row;
-    height: 90px;
+    height: 100px;
   }
 }
 
