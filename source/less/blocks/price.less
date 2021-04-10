@@ -43,6 +43,7 @@
 }
 
 .price__header--current {
+  position: relative;
   padding-top: 15px;
   padding-left: 5px;
   display: flex;
@@ -92,6 +93,7 @@
 }
 
 .price__text {
+  position: relative;
   height: 44px;
   padding-top: 12px;
   padding-left: 28px;
@@ -106,6 +108,16 @@
   background-color: @colorwhite;
   border: 2px solid @colorformborder;
 
+  &::before {
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 15px;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
     width: 145px;
@@ -118,8 +130,29 @@
   }
 }
 
+.price__text--no::before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 18px;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/no.svg");
+}
+
+.price__text--noview::before {
+  display: none;
+}
+
 .price__text--current {
+  position: relative;
   display: block;
+}
+
+.price__notext {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .price__wrapper {
