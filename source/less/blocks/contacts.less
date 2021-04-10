@@ -23,7 +23,7 @@
 .contacts__list {
   list-style: none;
   padding: 0;
-  margin-top: 45px;
+  margin-top: 35px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -35,6 +35,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.contacts__item {
+  margin-bottom: 16px;
 }
 
 .contacts__item:nth-child(2) {
@@ -68,6 +72,7 @@
   line-height: 25px;
   color: @colorblack;
   text-align: center;
+  margin: 0;
 }
 
 .contacts__phone {
@@ -88,6 +93,17 @@
   color: @colorcontacts;
   text-align: center;
   padding-left: 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: @specionalcolor;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @specionalcolor;
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 50px;
@@ -101,6 +117,7 @@
   line-height: 33px;
   color: @colorcontacts;
   text-align: center;
+  margin: 0;
 }
 
 .contacts__wrapper {
@@ -122,6 +139,7 @@
   height: 200px;
   width: 100%;
   margin: 0;
+  margin-top: 40px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
