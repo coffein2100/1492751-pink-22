@@ -14,7 +14,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    width: 700px;
+    width: 630px;
 
     .main-nav__toggle {
       display: none;
@@ -86,6 +86,31 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after,
+.main-nav--opened .main-nav__toggle:focus::after,
+.main-nav--opened .main-nav__toggle:focus::before {
+  background-color: @colorcontacts;
+}
+
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  background-color: @colorcontacts;
+  opacity: 0.3;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before,
+.main-nav--closed .main-nav__toggle:focus::before {
+  background-color: @colorcontacts;
+  box-shadow: 0 10px 0 0 @colorcontacts, 0 19px 0 0 @colorcontacts;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: @colorcontacts;
+  box-shadow: 0 10px 0 0 @colorcontacts, 0 19px 0 0 @colorcontacts;
+  opacity: 0.3;
 }
 
 @media (max-width: @mobile-width-only) {

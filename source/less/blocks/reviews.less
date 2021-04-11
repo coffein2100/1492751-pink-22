@@ -3,6 +3,11 @@
   margin-top: 45px;
   height: 350px;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 87px;
+    height: 290px;
+  }
+
   &::before {
     position: absolute;
     top: 300px;
@@ -13,6 +18,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 5;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -46,6 +55,7 @@
     display: block;
     order: 3;
     padding-left: 220px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,6 +76,7 @@
     font-size: 18px;
     line-height: 30px;
     order: 1;
+    margin-bottom: 35px;
   }
 }
 

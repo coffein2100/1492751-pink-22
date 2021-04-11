@@ -5,6 +5,23 @@
   height: 375px;
   background-color: @coloradvantages;
 
+  &::before {
+    position: absolute;
+    top: -35px;
+    content: "";
+    height: 395px;
+    width: 100%;
+    background-image: url("../img/backgroundgrey-index.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 310px;
+    background-color: @colorwhite;
+  }
+
   @media (min-width: @desktop-width) {
     height: 400px;
   }
@@ -13,6 +30,10 @@
 .price__table {
   border-collapse: collapse;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .price__header {
@@ -26,13 +47,15 @@
   color: @colorwhite;
   text-align: center;
   background-color: @specionalcolor;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
-    width: 145px;
+    height: 70px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,7 +75,7 @@
   @media (min-width: @tablet-width) {
     width: 145px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -116,11 +139,21 @@
     width: 31px;
     height: 21px;
     background-image: url("../img/yes.svg");
+
+    @media (min-width: @tablet-width) {
+      right: 55px;
+      top: 10px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 145px;
+    height: 38px;
+    width: 130px;
+    padding: 0;
+    text-transform: none;
+    padding-left: 20px;
+    padding-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -138,6 +171,11 @@
   width: 27px;
   height: 27px;
   background-image: url("../img/no.svg");
+
+  @media (min-width: @tablet-width) {
+    right: 60px;
+    top: 8px;
+  }
 }
 
 .price__text--noview::before {
@@ -174,6 +212,10 @@
   text-align: center;
   height: 30px;
   padding-left: auto;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .price__toggle {

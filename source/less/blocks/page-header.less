@@ -7,18 +7,30 @@
   flex-direction: column;
 }
 
+.page-header__logolink {
+  @media (min-width: @desktop-width) {
+    width: 163px;
+  }
+}
+
 .page-header__logo {
   margin-top: 20px;
   margin-left: 20px;
   height: 23px;
   width: 74px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 28px;
+    margin-left: 75px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 93px;
+    padding-top: 17px;
   }
 }
 

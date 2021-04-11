@@ -9,12 +9,12 @@
   background-size: cover;
 
   @media (min-width: @tablet-width) {
-    height: 653px;
+    height: 646px;
     background-image: url("../img/indextablet-head.jpg");
   }
 
   @media (min-width: @desktop-width) {
-    height: 643px;
+    height: 740px;
     background-image: url("../img/indexdesktop-head.jpg");
   }
 }
@@ -22,7 +22,6 @@
 .intro::before {
   content: "";
   position: absolute;
-  //left: -49%;
   bottom: 270px;
   width: 100%;
   height: 286px;
@@ -30,6 +29,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -150px 0;
+
+  @media (min-width: @tablet-width) {
+    height: 545px;
+    bottom: 0;
+    background-position: -110px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    height: 645px;
+    background-position: 146px 0;
+  }
 }
 
 .intro__head {
@@ -44,13 +55,14 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-top: 102px;
+    padding-top: 119px;
     font-size: 40px;
     line-height: 120%;
+    padding-left: 33px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 114px;
+    padding-top: 96px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -66,7 +78,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 120px;
+    margin-left: 130px;
   }
 }
 
@@ -83,7 +95,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 300px;
+    height: 425px;
   }
 }
 
@@ -112,7 +124,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 16px 30px 14px 30px;
+    padding: 16px 45px 14px 43px;
+    margin-top: 25px;
   }
 }
 
@@ -122,6 +135,15 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
+  }
 }
 
 .intro__list {
@@ -133,6 +155,16 @@
   margin-top: 35px;
   padding-left: 19px;
   padding-right: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 45px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 75px;
+  }
 }
 
 .list__item {
