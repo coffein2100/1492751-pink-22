@@ -2,6 +2,10 @@
   position: relative;
   margin: 0 auto;
 
+  @media (min-width: @desktop-width) {
+    height: 1370px;
+  }
+
   &::before {
     position: absolute;
     top: 222px;
@@ -15,6 +19,12 @@
 
     @media (min-width: @tablet-width) {
       top: 237px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 320px;
+      height: 300px;
+      z-index: -1;
     }
   }
 
@@ -80,6 +90,7 @@
     padding-top: 60px;
     padding-left: 90px;
     padding-right: 90px;
+    margin-bottom: 60px;
   }
 }
 
@@ -92,8 +103,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 90px;
-    height: 620px;
+    height: 920px;
+    background: @colorwhite;
   }
 }
 
@@ -102,6 +113,7 @@
   padding: 0;
   padding-top: 5px;
   list-style: none;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
     padding-left: 315px;
@@ -110,7 +122,8 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 0;
+    padding-left: 30px;
+    padding-right: 25px;
     gap: 68px;
   }
 }
@@ -125,19 +138,6 @@
       margin-bottom: 23px;
     }
   }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      position: absolute;
-      top: 222px;
-      content: "";
-      height: 335px;
-      width: 186px;
-      background-image: url("../img/pinkup.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
 }
 
 .advantages__title {
@@ -148,7 +148,6 @@
   color: @colorblack;
   text-align: center;
   margin: 0;
-  //margin-top: 30px;
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
@@ -185,5 +184,28 @@
 .advantages__br {
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.advantages__img {
+  display: none;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__imgcont {
+  display: none;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    height: 300px;
+    width: 186px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    z-index: 10;
   }
 }

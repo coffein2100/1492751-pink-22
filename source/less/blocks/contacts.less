@@ -118,6 +118,10 @@
   color: @colorcontacts;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+  }
 }
 
 .contacts__wrapper {
@@ -145,6 +149,10 @@
     height: 374px;
     margin-top: 15px;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 533px;
+  }
 }
 
 .contacts__map::before {
@@ -163,6 +171,10 @@
     height: 90px;
     top: -10px;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 150px;
+  }
 }
 
 .contacts__mapview {
@@ -171,5 +183,15 @@
 
   @media (min-width: @tablet-width) {
     height: 367px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 533px;
+  }
+}
+
+.contacts {
+  @media (min-width: @desktop-width) {
+    height: 873px;
   }
 }

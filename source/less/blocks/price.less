@@ -15,6 +15,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
+
+    @media (min-width: @desktop-width) {
+      height: 530px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -23,7 +27,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -33,6 +37,11 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    margin-left: 18px;
   }
 }
 
@@ -59,7 +68,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 233px;
+    height: 80px;
+    width: 230px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -76,10 +86,28 @@
     width: 145px;
     margin: auto;
     padding-top: 10px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      height: 61px;
+      width: 61px;
+      background-image: url("../img/pricehit.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+
+      @media (min-width: @desktop-width) {
+        height: 74px;
+        width: 74px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
-    width: 233px;
+    width: 229px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -144,6 +172,11 @@
       right: 55px;
       top: 10px;
     }
+
+    @media (min-width: @desktop-width) {
+      right: 105px;
+      top: 21px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -157,9 +190,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 233px;
+    width: 212px;
     font-size: 18px;
     line-height: 30px;
+    padding-top: 15px;
+    height: 42px;
   }
 }
 
@@ -175,6 +210,11 @@
   @media (min-width: @tablet-width) {
     right: 60px;
     top: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 110px;
+    top: 20px;
   }
 }
 
