@@ -1,6 +1,5 @@
 .advantages {
   position: relative;
-  margin: 0 auto;
 
   @media (min-width: @desktop-width) {
     height: 1370px;
@@ -22,9 +21,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: 320px;
-      height: 300px;
-      z-index: -1;
+      top: 225px;
     }
   }
 
@@ -97,6 +94,7 @@
 .advantages__bottom {
   background: @coloradvantages;
   height: 705px;
+  z-index: 5;
 
   @media (min-width: @tablet-width) {
     height: 740px;
@@ -104,7 +102,6 @@
 
   @media (min-width: @desktop-width) {
     height: 920px;
-    background: @colorwhite;
   }
 }
 
@@ -113,7 +110,7 @@
   padding: 0;
   padding-top: 5px;
   list-style: none;
-  z-index: -1;
+  z-index: 5;
 
   @media (min-width: @tablet-width) {
     padding-left: 315px;
@@ -190,6 +187,7 @@
 .advantages__img {
   display: none;
   margin: 0 auto;
+  z-index: 5;
 
   @media (min-width: @desktop-width) {
     display: block;
@@ -199,6 +197,8 @@
 .advantages__imgcont {
   display: none;
   margin: 0 auto;
+  z-index: 10;
+  box-shadow: 0 13px 9px -4px rgba(34, 60, 80, 0.6);
 
   @media (min-width: @desktop-width) {
     display: block;
@@ -206,6 +206,5 @@
     width: 186px;
     overflow: hidden;
     margin-bottom: 55px;
-    z-index: 10;
   }
 }

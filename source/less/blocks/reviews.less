@@ -127,9 +127,18 @@
 .reviews__toggleslist {
   margin: 0;
   padding: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
   height: 30px;
-  padding-left: auto;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 270px;
+    padding-right: 270px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -137,17 +146,37 @@
 }
 
 .reviews__toggle {
+  display: block;
+  padding: 0;
+  overflow: hidden;
   margin-right: 3px;
   border-radius: 50%;
   background-color: rgba(40, 54, 69, 0.3);
-  border: 2px solid @colorwhite;
-  height: 16px;
-  width: 16px;
+  border: none;
+  height: 6px;
+  width: 6px;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
 .slider__toggle--current {
+  padding: 0;
   background-color: @colorwhite;
-  border: 4px solid @specionalcolor;
-  height: 18px;
-  width: 18px;
+  border: 3px solid @specionalcolor;
+  height: 12px;
+  width: 12px;
+
+  &:hover {
+    background-color: @colorwhite;
+  }
+
+  &:active {
+    background-color: @colorwhite;
+  }
 }
