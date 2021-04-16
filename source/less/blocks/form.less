@@ -1,5 +1,4 @@
 .form__title {
-  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -8,6 +7,11 @@
   padding-left: 21px;
   margin-top: 18px;
   margin-bottom: 5px;
+  pointer-events: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .form__wrapper {
@@ -44,10 +48,19 @@
 .title--first {
   margin-top: 2px;
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 77px;
+    margin-right: 5px;
+  }
 }
 
 .title--phone {
-  margin-top: 40px;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .form__datainput {
@@ -62,20 +75,84 @@
   padding-left: 19px;
   padding-top: 12px;
   padding-bottom: 15px;
+  margin-bottom: 15px;
   resize: none;
   color: @specionalcolor;
+
+  &:hover {
+    border-color: @specionalcolor;
+  }
+
+  &:active {
+    border-color: @colorformtitle;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 82%;
+    margin-bottom: 60px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 73%;
+    margin-bottom: 52px;
+  }
+}
+
+.form__datainput--name {
+  @media (min-width: @tablet-width) {
+    width: 89%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 84%;
+  }
 }
 
 .datainput--firstname {
   margin-bottom: 44px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+    width: 75%;
+  }
 }
 
 .datainput--big {
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    width: 96%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 97%;
+  }
+}
+
+.form__datainput--phone {
+  @media (min-width: @tablet-width) {
+    width: 96%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+  }
 }
 
 .datainput--email {
   margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    width: 96%;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+  }
 }
 
 .form__section {
@@ -111,9 +188,27 @@
   }
 }
 
+.form__section-contacts {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
 .section--first {
   @media (min-width: @tablet-width) {
     border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    margin-bottom: 5px;
 
     .form__wrapper {
       width: 616px;
@@ -123,6 +218,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    margin-top: 40px;
     width: 396px;
 
     .form__wrapper {
@@ -148,7 +244,7 @@
   line-height: 18px;
   color: @colorformtitle;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 20px;
   margin-bottom: 44px;
   padding-left: 22px;
   padding-right: 22px;
@@ -193,7 +289,7 @@
 
 
 .header--emotion {
-  margin-top: 32px;
+  margin-top: 30px;
   margin-bottom: 22px;
 }
 
@@ -203,23 +299,30 @@
   font-size: 18px;
   line-height: 30px;
   color: @specionalcolor;
-  padding-left: 42px;
+  padding-left: 62px;
 }
 
 .label--radio {
-  padding-left: 52px;
+  padding-left: 72px;
 }
 
 .form__listprogress {
   list-style: none;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .form__item {
-  margin-bottom: 50px;
+  position: relative;
+  margin-bottom: 52px;
 
   &:nth-last-child(1) {
-    margin-bottom: 45px;
+    margin-bottom: 32px;
   }
 }
 
@@ -272,4 +375,93 @@
     flex-direction: row;
     width: 936px;
   }
+}
+
+.form__datacheck + label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -4px;
+    width: 35px;
+    height: 35px;
+    background: @colorwhite;
+    border: 2px solid @colorformborder;
+    border-radius: 1px;
+  }
+}
+
+.form__datacheck:not(:disabled):not(:checked) + label:hover::before,
+.form__datacheck:not(:disabled):not(:checked) + label:focus::before {
+  border-color: @specionalcolor;
+}
+
+.form__datacheck:not(:disabled):checked + label:hover::before,
+.form__datacheck:not(:disabled):checked + label:focus::before {
+  border-color: @specionalcolor;
+}
+
+.form__datacheck:not(:disabled):not(:checked) + label:active::before {
+  border-color: @colorformtitle;
+}
+
+.form__datacheck:not(:disabled):checked + label:active::before {
+  border-color: @colorformtitle;
+}
+
+.form__datacheck:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 25%;
+    width: 22px;
+    height: 16px;
+    background: url("../img/checkedinput.svg") no-repeat;
+  }
+}
+
+.form__dataradio + label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -6px;
+    width: 37px;
+    height: 37px;
+    background: @colorwhite;
+    border: 2px solid @colorformborder;
+    border-radius: 50%;
+  }
+}
+
+.form__dataradio:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    background: @colorformtitle;
+    border-radius: 50%;
+  }
+}
+
+.form__dataradio:not(:disabled):not(:checked) + label:hover::before,
+.form__dataradio:not(:disabled):not(:checked) + label:focus::before {
+  border-color: @specionalcolor;
+}
+
+.form__dataradio:not(:disabled):checked + label:hover::before,
+.form__dataradio:not(:disabled):checked + label:focus::before {
+  border-color: @specionalcolor;
+}
+
+.form__dataradio:not(:disabled):not(:checked) + label:active::before {
+  border-color: @colorformtitle;
+}
+
+.form__dataradio:not(:disabled):checked + label:active::before {
+  border-color: @colorformtitle;
 }
