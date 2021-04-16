@@ -23,7 +23,7 @@
 .contacts__list {
   list-style: none;
   padding: 0;
-  margin-top: 45px;
+  margin-top: 35px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -35,6 +35,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.contacts__item {
+  margin-bottom: 16px;
 }
 
 .contacts__item:nth-child(2) {
@@ -50,7 +54,7 @@
 
 .contacts__item:nth-child(3) {
   @media (min-width: @tablet-width) {
-    margin-top: 45px;
+    margin-top: 25px;
     margin-left: 212px;
   }
 
@@ -68,6 +72,7 @@
   line-height: 25px;
   color: @colorblack;
   text-align: center;
+  margin: 0;
 }
 
 .contacts__phone {
@@ -86,8 +91,18 @@
   font-size: 24px;
   line-height: 33px;
   color: @colorcontacts;
-  text-align: center;
   padding-left: 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: @specionalcolor;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: @specionalcolor;
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 50px;
@@ -101,6 +116,11 @@
   line-height: 33px;
   color: @colorcontacts;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+  }
 }
 
 .contacts__wrapper {
@@ -117,14 +137,60 @@
 }
 
 .contacts__map {
-  background-size: cover;
-  background-image: url("../img/map.jpg");
+  position: relative;
   height: 200px;
   width: 100%;
   margin: 0;
+  margin-top: 40px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     height: 374px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 533px;
+  }
+}
+
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  background-image: url("../img/mapangel.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  z-index: 25;
+
+  @media (min-width: @tablet-width) {
+    height: 90px;
+    top: -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 150px;
+  }
+}
+
+.contacts__mapview {
+  height: 200px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 367px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 533px;
+  }
+}
+
+.contacts {
+  @media (min-width: @desktop-width) {
+    height: 873px;
   }
 }

@@ -1,15 +1,36 @@
 .study {
+  position: relative;
   height: 290px;
   display: none;
 
+  &::before {
+    position: absolute;
+    bottom: 65px;
+    left: 3%;
+    content: "";
+    height: 276px;
+    width: 238px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: @desktop-width) {
+      height: 345px;
+      width: 298px;
+      left: 11%;
+      bottom: 65px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
+    height: 330px;
     padding-top: 62px;
     display: block;
     background-color: @colorwhite;
   }
 
   @media (min-width: @desktop-width) {
-    height: 290px;
+    height: 400px;
     background-color: @coloradvantages;
   }
 }
@@ -33,16 +54,27 @@
   font-size: 30px;
   line-height: 36px;
   color: @colorblack;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
-    padding-left: 270px;
+    padding-left: 320px;
+    padding-right: 10px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 298px;
-    padding-left: 350px;
+    width: 400px;
+    padding-left: 390px;
     font-size: 30px;
     line-height: 30px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+  }
+}
+
+.study__br {
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -57,14 +89,18 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    padding-left: 270px;
+    margin-top: 0;
+    padding-left: 320px;
+    padding-right: 0;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     width: 534px;
-    padding-left: 350px;
+    padding-left: 390px;
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -77,11 +113,11 @@
   text-decoration: underline;
 
   @media (min-width: @tablet-width) {
-    padding-left: 270px;
+    padding-left: 320px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 350px;
+    padding-left: 390px;
     font-size: 18px;
     line-height: 30px;
   }
