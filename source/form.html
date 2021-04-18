@@ -56,9 +56,7 @@
       <section class="formcontest">
         <h2 class="visually-hidden">Форма участия</h2>
         <div class="formcontest__wrapper">
-          <p class="formcontest__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту!
-            <span class="formcontest__headerbottom">Пожалуйста, заполните форму ниже:</span>
-          </p>
+          <p class="formcontest__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         </div>
         <form class="formcontest__form form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="form__section section--first">
@@ -76,27 +74,27 @@
             <p class="form__header">Ваши безбашенные достижения в путешествии</p>
             <div class="form__wrapper">
               <ul class="form__listprogress">
-                <li class="form__item">
+                <li class="form__item form__item--progress">
                   <input class="form__datacheck visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
                   <label class="form__label" for="selfi">Сделал селфи с акулой</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--progress">
                   <input class="form__datacheck visually-hidden" type="checkbox" name="burn" id="burn" checked>
                   <label class="form__label" for="burn">Обгорел на пляже</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--progress">
                   <input class="form__datacheck visually-hidden" type="checkbox" name="ChuckNorris" id="ChuckNorris">
                   <label class="form__label" for="ChuckNorris">Видел Чака Норриса</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--progress">
                   <input class="form__datacheck visually-hidden" type="checkbox" name="souvenir" id="souvenir">
                   <label class="form__label" for="souvenir">Накупил сувениров</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--progress">
                   <input class="form__datacheck visually-hidden" type="checkbox" name="tower" id="tower" checked>
                   <label class="form__label" for="tower">Удержал башню</label>
                 </li>
-                <li class="form__item">
+                <li class="form__item form__item--progress">
                   <input class="form__datacheck visually-hidden" type="checkbox" name="rout" id="rout">
                   <label class="form__label" for="rout">Разгромил отель</label>
                 </li>
@@ -105,11 +103,16 @@
           </fieldset>
           <fieldset class="form__section form__section-contacts">
             <legend class="form__legend">контактная информация</legend>
-            <div class="form__wrapper">
-              <label class="form__title title--phone" for="phone">НОМЕР ТЕЛЕФОНА</label>
-              <input class="form__datainput form__datainput--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-              <label class="form__title" for="email">АДРЕС ПОЧТЫ</label>
-              <input class="form__datainput datainput--email" id="email" type="email" name="email" placeholder="Введите почту *">
+            <div class="form__wrapper form__wrapper--contactsdesktiop">
+              <div class="form__wrapperphone">
+                <label class="form__title form__title--phone" for="phone">НОМЕР ТЕЛЕФОНА</label>
+                <input class="form__datainput form__datainput--phone" id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__wrapperemail">
+                <label class="form__title form__title--email" for="email">АДРЕС ПОЧТЫ</label>
+                <input class="form__datainput formdatainput--email" id="email" type="email" name="email" placeholder="Введите почту *">
+                <div class="formemailicon"></div>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__section section--color">
@@ -132,7 +135,7 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="form__section">
+          <fieldset class="form__section form__section--emotion">
             <legend class="form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
             <p class="form__header header--emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
             <div class="form__wrapper">
@@ -143,7 +146,7 @@
             <button class="button" type="submit">Отправить форму</button>
             <p class="form__info">
             <small>
-              <span class="form_specional">*</span> — обязательные поля
+              <span class="form_specional">*</span> — обязательные <span class="form__specionaldesktop">для заполнения</span> поля
             </small>
             </p>
           </div>
