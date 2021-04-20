@@ -1,6 +1,8 @@
 .formcontest__header {
+  display: inline-block;
   margin: 0;
   padding-top: 38px;
+  margin-top: 10px;
   margin-bottom: 26px;
   color: @specionalcolor;
   font-style: normal;
@@ -8,10 +10,15 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  height: 85px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
+    padding-top: 83px;
     font-size: 18px;
     line-height: 30px;
+    min-height: 95px;
+    overflow: auto;
   }
 }
 
@@ -35,5 +42,9 @@
 
   @media (min-width: @tablet-width) {
     width: 490px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 756px;
   }
 }

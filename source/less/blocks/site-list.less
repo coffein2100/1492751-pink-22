@@ -39,8 +39,15 @@
     text-transform: none;
     line-height: 18px;
     width: 622px;
+    height: 44px;
     margin-left: 20px;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @colorwhite;
   }
 }
