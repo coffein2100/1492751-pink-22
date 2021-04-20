@@ -75,7 +75,7 @@
 
 .photousers__panoramcomments {
   background-color: @coloradvantages;
-  margin: 0 20px;
+  margin: 0 auto;
   padding: 0;
   height: 193px;
   width: 280px;
@@ -176,6 +176,22 @@
 }
 
 .photousers__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photousers__headbr {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.photousers__photocontainer {
   height: 180px;
   width: 280px;
 
