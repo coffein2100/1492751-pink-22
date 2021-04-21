@@ -10,6 +10,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+    margin-bottom: 70px;
   }
 }
 
@@ -61,6 +67,11 @@
     margin: 0;
     grid-row: 1 / 2;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .userload__button {
@@ -72,20 +83,56 @@
   box-sizing: border-box;
   border-radius: 30px;
   color: @colorformtitle;
-  padding: 16px 85px 15px 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  width: 280px;
+  min-height: 55px;
   margin-top: 65px;
   margin-bottom: 10px;
 
+  &:hover,
+  &:focus {
+    background: @colorformtitle;
+    color: @colorwhite;
+  }
+
+  &:active {
+    background: @colorformtitle;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 140px;
-    padding: 0 30px 0 30px;
+    width: 183px;
   }
 }
 
 .button--cancel {
   margin-top: 3px;
-  padding: 16px 99px 15px 99px;
+  padding-left: 6px;
+  padding-right: 6px;
   opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    background: inherit;
+    color: rgba(40, 54, 69, 1);
+    opacity: 0.3;
+  }
+
+  &:active {
+    background: @specionalcolor;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: 140px;
@@ -150,6 +197,14 @@
   border-radius: 50%;
   background: @colorwhite;
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background: @colorformtitle;
+  }
+
   @media (min-width: @tablet-width) {
     left: 163px;
   }
@@ -165,6 +220,7 @@
 
 .filterlist__button {
   border: none;
+  background: inherit;
 }
 
 .userload__scalelist {
@@ -196,5 +252,41 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.userload__filtericonscale {
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.userload__filtericonsaturation {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.userload__filtericoncontrast {
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
   }
 }

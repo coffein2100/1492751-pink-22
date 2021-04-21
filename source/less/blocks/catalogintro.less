@@ -5,12 +5,12 @@
   background-size: cover;
 
   @media (min-width: @tablet-width) {
-    height: 438px;
+    min-height: 445px;
     background-image: url("../img/indextablet-head.jpg");
   }
 
   @media (min-width: @desktop-width) {
-    height: 392px;
+    min-height: 395px;
     background-image: url("../img/indexdesktop-head.jpg");
   }
 }
@@ -38,5 +38,10 @@
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
+    padding-top: 180px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 170px;
   }
 }
