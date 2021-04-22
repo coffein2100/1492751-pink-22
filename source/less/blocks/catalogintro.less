@@ -1,15 +1,17 @@
 .catalogintro {
-  height: 236px;
+  min-height: 236px;
   width: 100%;
-  background: url("../img/backgroundhead.jpg") no-repeat;
+  background: url("../img/indexmobile-head.jpg");
   background-size: cover;
 
   @media (min-width: @tablet-width) {
-    height: 336px;
+    min-height: 445px;
+    background-image: url("../img/indextablet-head.jpg");
   }
 
-  @media (min-width: @tablet-width) {
-    height: 306px;
+  @media (min-width: @desktop-width) {
+    min-height: 395px;
+    background-image: url("../img/indexdesktop-head.jpg");
   }
 }
 
@@ -36,5 +38,10 @@
   @media (min-width: @tablet-width) {
     font-size: 50px;
     line-height: 68px;
+    padding-top: 180px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 170px;
   }
 }

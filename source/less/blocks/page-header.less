@@ -21,13 +21,17 @@
 
 .page-header--open {
   background-color: @specionalcolor;
+
+  @media (min-width: @desktop-width) {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header .main-nav--opened {
   background-color: @specionalcolor;
 
   @media (min-width: @desktop-width) {
-    background: rgba(0, 0, 0, 0.3);
+    background: inherit;
   }
 }
 
