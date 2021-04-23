@@ -37,6 +37,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/pinkhi@2x.png");
+      background-size: cover;
+    }
+
     @media (min-width: @tablet-width) {
       left: 20px;
       height: 483px;

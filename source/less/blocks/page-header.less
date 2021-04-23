@@ -36,19 +36,31 @@
 }
 
 .page-header__logolink {
+  height: 100%;
+
   @media (min-width: @desktop-width) {
-    width: 163px;
+    width: 243px;
   }
 }
 
 .page-header__logo {
+  fill: white;
   margin-top: 20px;
   margin-left: 20px;
-  height: 23px;
-  width: 74px;
+  min-height: 23px;
+  min-width: 74px;
+
+  &:hover {
+    fill: @colorformtitle;
+  }
+
+  &:active {
+    fill: white;
+    fill-opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
-    height: 40px;
+    display: none;
     margin-top: 42px;
     margin-left: 45px;
   }
@@ -56,6 +68,50 @@
   @media (min-width: @desktop-width) {
     margin-top: 18px;
     margin-left: 75px;
+  }
+}
+
+.page-header__logotablet {
+  display: none;
+  fill: white;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 45px;
+
+    &:hover {
+      fill: @colorformtitle;
+    }
+
+    &:active {
+      fill: white;
+      fill-opacity: 0.3;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logodesktop {
+  display: none;
+  fill: white;
+
+  &:hover {
+    fill: @colorformtitle;
+  }
+
+  &:active {
+    fill: white;
+    fill-opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 15px;
+    margin-left: 25px;
   }
 }
 
