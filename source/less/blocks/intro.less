@@ -7,14 +7,29 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/indexmobile-head@2x.jpg");
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 646px;
     background-image: url("../img/indextablet-head.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/indextablet-head@2x.jpg");
+      background-size: cover;
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-height: 850px;
     background-image: url("../img/indexdesktop-head.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/indexdesktop-head@2x.jpg");
+      background-size: 1338px auto;
+    }
   }
 }
 
@@ -30,6 +45,11 @@
   background-position: -150px 0;
   z-index: 0;
   pointer-events: none;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/mobilehead@2x.png");
+    background-size: cover;
+  }
 
   @media (min-width: @tablet-width) {
     height: 475px;

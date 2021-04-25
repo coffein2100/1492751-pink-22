@@ -31,6 +31,16 @@
   padding-top: 40px;
   display: block;
   margin: auto;
+  fill: @specionalcolor;
+
+  &:hover {
+    fill: @colorformtitle;
+  }
+
+  &:active {
+    fill: @specionalcolor;
+    fill-opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
@@ -40,7 +50,26 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 20px;
+    display: none;
+  }
+}
+
+.page-footer__logodesktop {
+  display: none;
+  fill: @specionalcolor;
+
+  &:hover {
+    fill: @colorformtitle;
+  }
+
+  &:active {
+    fill: @specionalcolor;
+    fill-opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-top: 25px;
   }
 }
 
