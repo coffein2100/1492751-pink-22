@@ -218,7 +218,17 @@
   left: 90px;
 }
 
-.filterlist__button {
+.filterlist__buttonscale {
+  border: none;
+  background: inherit;
+}
+
+.filterlist__buttonconsaturation {
+  border: none;
+  background: inherit;
+}
+
+.filterlist__buttoncontrast {
   border: none;
   background: inherit;
 }
@@ -256,6 +266,14 @@
 }
 
 .userload__filtericonscale {
+  fill: @specionalcolor;
+  fill-opacity: 0.3;
+
+  &:hover {
+    fill: @specionalcolor;
+    fill-opacity: 0.5;
+  }
+
   @media (min-width: @tablet-width) {
     width: 22px;
     height: 22px;
@@ -267,7 +285,20 @@
   }
 }
 
+.userload__filtericonscale--current {
+  fill: @colorformtitle;
+  fill-opacity: 1;
+}
+
 .userload__filtericonsaturation {
+  fill: @specionalcolor;
+  fill-opacity: 0.3;
+
+  &:hover {
+    fill: @specionalcolor;
+    fill-opacity: 0.5;
+  }
+
   @media (min-width: @tablet-width) {
     width: 24px;
     height: 22px;
@@ -280,6 +311,14 @@
 }
 
 .userload__filtericoncontrast {
+  fill: @specionalcolor;
+  fill-opacity: 0.3;
+
+  &:hover {
+    fill: @specionalcolor;
+    fill-opacity: 0.5;
+  }
+
   @media (min-width: @tablet-width) {
     width: 16px;
     height: 16px;
@@ -289,4 +328,14 @@
     width: 32px;
     height: 32px;
   }
+}
+
+.userload__filtericonsaturation--current {
+  fill: @colorformtitle;
+  fill-opacity: 1;
+}
+
+.userload__filtericoncontrast--current {
+  fill: @colorformtitle;
+  fill-opacity: 1;
 }
