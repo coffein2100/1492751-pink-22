@@ -3,25 +3,6 @@
   height: 290px;
   display: none;
 
-  &::before {
-    position: absolute;
-    bottom: 65px;
-    left: 3%;
-    content: "";
-    height: 276px;
-    width: 238px;
-    background-image: url("../img/timer.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-width: @desktop-width) {
-      height: 345px;
-      width: 298px;
-      left: 11%;
-      bottom: 65px;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     height: 330px;
     padding-top: 62px;
@@ -37,6 +18,8 @@
 }
 
 .study__wrapper {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     width: 620px;
     margin: 0 auto;
@@ -44,6 +27,25 @@
 
   @media (min-width: @desktop-width) {
     width: 960px;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: -23px;
+    left: 10px;
+    content: "";
+    height: 276px;
+    width: 238px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: @desktop-width) {
+      height: 345px;
+      width: 298px;
+      bottom: -43px;
+      left: 20px;
+    }
   }
 }
 
