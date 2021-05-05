@@ -25,37 +25,10 @@
       top: 325px;
     }
   }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 27%;
-    height: 280px;
-    width: 155px;
-    background-image: url("../img/pinkhi.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/pinkhi@2x.png");
-      background-size: cover;
-    }
-
-    @media (min-width: @tablet-width) {
-      left: 20px;
-      height: 483px;
-      width: 268px;
-      bottom: 325px;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: none;
-    }
-  }
 }
 
 .advantages__wrapper {
+  position: relative;
   margin: 0 auto;
   width: 280px;
 
@@ -128,6 +101,35 @@
     padding-left: 30px;
     padding-right: 25px;
     gap: 68px;
+  }
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -320px;
+    left: 70px;
+    height: 275px;
+    width: 155px;
+    background-image: url("../img/pinkhi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/pinkhi@2x.png");
+      background-size: cover;
+    }
+
+    @media (min-width: @tablet-width) {
+      left: 10px;
+      height: 483px;
+      width: 268px;
+      bottom: -22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }
 
