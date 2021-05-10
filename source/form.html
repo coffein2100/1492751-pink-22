@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon16.ico" type="image/x-icon">
   </head>
-  <body class="page__body">
+  <body class="page">
     <header class="page-header page-header--open">
       <div class="page__wrapper">
         <a class="page-header__logolink" href="index.html">
@@ -68,17 +68,17 @@
           <p class="formcontest__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000  миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         </div>
         <form class="formcontest__form form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
-          <fieldset class="form__section section--first">
+          <fieldset class="form__section form__section--first">
           <div class="form__wrapper">
-            <label class="form__title title--first" for="secondname">ФАМИЛИЯ:</label>
+            <label class="form__title form__title--first" for="secondname">ФАМИЛИЯ:</label>
             <input class="form__datainput" id="secondname" type="text" name="secondname" placeholder="Укажите фамилию *">
             <label class="form__title" for="name">ИМЯ:</label>
             <input class="form__datainput form__datainput--name" id="name" type="text" name="name" placeholder="Введите ваше имя *">
             <label class="form__title" for="firstname">ОТЧЕСТВО:</label>
-            <input class="form__datainput datainput--firstname" id="firstname" type="text" name="firstname" placeholder="Ну и отчество тоже">
+            <input class="form__datainput form__datainput--firstname" id="firstname" type="text" name="firstname" placeholder="Ну и отчество тоже">
           </div>
           </fieldset>
-          <fieldset class="form__section section--color">
+          <fieldset class="form__section form__section--color">
             <legend class="form__legend form__legend--progress">Ваши безбашенные достижения в путешествии</legend>
             <p class="form__header">Ваши безбашенные достижения в путешествии</p>
             <div class="form__wrapper">
@@ -119,42 +119,42 @@
               </div>
               <div class="form__wrapperemail">
                 <label class="form__title form__title--email" for="email">АДРЕС ПОЧТЫ</label>
-                <input class="form__datainput formdatainput--email" id="email" type="email" name="email" placeholder="Введите почту *">
+                <input class="form__datainput form__datainput--email" id="email" type="email" name="email" placeholder="Введите почту *">
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__section section--color">
+          <fieldset class="form__section form__section--color">
             <legend class="form__legend">С каким приложением путешествовали?</legend>
             <p class="form__header">С каким приложением путешествовали?</p>
             <div class="form__wrapper">
               <ul class="form__listdevice">
                 <li class="form__itemdevice">
                   <input class="form__dataradio visually-hidden" type="radio" name="device" value="IOS" id="IOS" checked>
-                  <label class="form__label label--radio" for="IOS">Pink для iOS</label>
+                  <label class="form__label form__label--radio" for="IOS">Pink для iOS</label>
                 </li>
                 <li class="form__itemdevice">
                   <input class="form__dataradio visually-hidden" type="radio" name="device" value="Android" id="Android">
-                  <label class="form__label label--radio" for="Android">Pink на Android</label>
+                  <label class="form__label form__label--radio" for="Android">Pink на Android</label>
                 </li>
                 <li class="form__itemdevice">
                   <input class="form__dataradio visually-hidden" type="radio" name="device" value="WindowsPhone" id="WindowsPhone">
-                  <label class="form__label label--radio" for="WindowsPhone">Windows Phone</label>
+                  <label class="form__label form__label--radio" for="WindowsPhone">Windows Phone</label>
                 </li>
               </ul>
             </div>
           </fieldset>
           <fieldset class="form__section form__section--emotion">
             <legend class="form__legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
-            <p class="form__header header--emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
+            <p class="form__header form__header--emotion">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
             <div class="form__wrapper">
-              <textarea class="form__datainput datainput--big" rows="5" id="textlatters" name="laters" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="form__datainput form__datainput--big" rows="5" id="textlatters" name="laters" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           <div class="form__wrapperbottom">
             <button class="button" type="submit">Отправить форму</button>
             <p>
             <small class="form__info">
-              <span class="form_specional">*</span> — обязательные <span class="form__specionaldesktop">для заполнения</span> поля
+              <span class="form__specional">*</span> — обязательные <span class="form__specionaldesktop">для заполнения</span> поля
             </small>
             </p>
           </div>
@@ -167,7 +167,7 @@
         </div>
         <div class="modalsuccess__wrapperbottom">
           <div class="modalsuccess__wrapper">
-            <button class="button__modal" type="button">ЗАКРЫТЬ ОКНО</button>
+            <button class="modalsuccess__modal" type="button">ЗАКРЫТЬ ОКНО</button>
           </div>
         </div>
       </section>
@@ -178,7 +178,7 @@
         </div>
         <div class="modalfailure__wrapperbottom">
           <div class="modalfailure__wrapper">
-            <button class="button__modal modal--failure" type="button">ОК</button>
+            <button class="modalfailure__modal modalfailure__modal--failure" type="button">ОК</button>
           </div>
         </div>
       </section>
@@ -191,7 +191,7 @@
         <svg class="page-footer__logodesktop">
           <use xlink:href="img/sprite.svg#logofooterdesktop"></use>
         </svg>
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">

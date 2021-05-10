@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon16.ico" type="image/x-icon">
   </head>
-  <body class="page__body">
+  <body class="page">
     <header class="page-header page-header--open">
       <div class="page__wrapper">
         <a class="page-header__logolink" href="index.html">
@@ -68,7 +68,7 @@
           <div class="intro__wrapperbottom">
             <div class="intro__wrapper">
               <a class="intro__button" onclick="window.location.href = 'https://www.apple.com/ru/app-store/';">Скачать приложение</a>
-              <ul class="intro__list">
+              <ul class="list intro__list">
                 <li class="list__item">
                   <a href="https://www.apple.com/ru/app-store/">
                     <svg width="47" height="56">
@@ -108,7 +108,7 @@
                 <div class="advantages__imgcont">
                   <img class="advantages__img" src="img/pinkup.png" srcset="img/pinkup@2x.png 2x" width="186" height="382" alt="телефон">
                 </div>
-                <h3 class="advantages__title advantages__item--Cheersup">Поднимает настроение</h3>
+                <h3 class="advantages__title">Поднимает настроение</h3>
                 <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="advantages__item">
@@ -118,14 +118,14 @@
                     <img class="advantages__img" src="img/pinkchange.png" srcset="img/pinkchange@2x.png 2x" width="186" height="382" alt="телефон">
                   </picture>
                 </div>
-                <h3 class="advantages__title advantages__item--change">Меняет мир вокруг</h3>
+                <h3 class="advantages__title">Меняет мир вокруг</h3>
                 <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="advantages__item">
                 <div class="advantages__imgcont">
                   <img class="advantages__img" src="img/pinkhi.png" srcset="img/pinkhi@2x.png 2x" width="186" height="382" alt="телефон">
                 </div>
-                <h3 class="advantages__title advantages__item--makes">Заводит новых друзей</h3>
+                <h3 class="advantages__title">Заводит новых друзей</h3>
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
@@ -151,8 +151,8 @@
             </div>
           </blockquote>
           </div>
-          <p class="reviews__toggleslist slider__toggles">
-          <button class="reviews__toggle slider__toggle--current" type="button" aria-label="Первый слайд"></button>
+          <p class="reviews__toggleslist">
+          <button class="reviews__toggle reviews__toggle--current" type="button" aria-label="Первый слайд"></button>
           <button class="reviews__toggle" type="button" aria-label="Второй слайд"></button>
           <button class="reviews__toggle" type="button" aria-label="Третий слайд"></button>
           </p>
@@ -191,7 +191,7 @@
               <td class="price__text"><span class="price__notext">Комментарии</span></td>
             </tr>
           </table>
-          <p class="price__toggles slider__toggles">
+          <p class="price__toggles">
             <button class="price__toggle" type="button" aria-label="Первый слайд"></button>
             <button class="price__toggle price__toggle--current" type="button" aria-label="Текущий слайд"></button>
             <button class="price__toggle" type="button" aria-label="Третий слайд"></button>
@@ -230,7 +230,7 @@
         <svg class="page-footer__logodesktop">
           <use xlink:href="img/sprite.svg#logofooterdesktop"></use>
         </svg>
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">

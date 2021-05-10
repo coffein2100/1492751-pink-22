@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="favicon32.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon16.ico" type="image/x-icon">
   </head>
-  <body class="page__body">
+  <body class="page">
     <header class="page-header page-header--open">
       <div class="page__wrapper">
         <a class="page-header__logolink" href="index.html">
@@ -81,7 +81,7 @@
         </div>
         <div class="photousers__wrapper">
           <ul class="photousers__list">
-            <li class="photousers_item">
+            <li class="photousers__item">
               <blockquote class="photousers__comment">
                 <a class="photousers__link" href="#">
                   <div class="photousers__photocontainer">
@@ -92,14 +92,14 @@
                     </picture>
                   </div>
                 </a>
-                <div class="photousers__wrappercomment wrappercomment--first">
+                <div class="photousers__wrappercomment photousers__wrappercomment--first">
                   <cite class="photousers__name">Левон <span class="photousers__timepost">(5 часов назад)</span></cite>
                   <p class="photousers__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                   <span class="photousers__likes">Нравится: 356</span>
                 </div>
               </blockquote>
             </li>
-            <li class="photousers_item">
+            <li class="photousers__item">
               <blockquote class="photousers__comment">
                 <a class="photousers__link" href="#">
                   <div class="photousers__photocontainer">
@@ -117,7 +117,7 @@
                 </div>
               </blockquote>
             </li>
-            <li class="photousers_item">
+            <li class="photousers__item">
               <blockquote class="photousers__comment">
                 <a class="photousers__link" href="#">
                   <div class="photousers__photocontainer">
@@ -128,14 +128,14 @@
                     </picture>
                   </div>
                 </a>
-                <div class="photousers__wrappercomment wrappercomment--advertising">
+                <div class="photousers__wrappercomment photousers__wrappercomment--advertising">
                   <cite class="photousers__name">Борис <span class="photousers__timepost">(20 часов назад)</span></cite>
                   <p class="photousers__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                   <span class="photousers__likes">Нравится: 215</span>
                 </div>
               </blockquote>
             </li>
-            <li class="photousers_item">
+            <li class="photousers__item">
               <blockquote class="photousers__comment">
                 <a class="photousers__link" href="#">
                   <div class="photousers__photocontainer">
@@ -153,7 +153,7 @@
                 </div>
               </blockquote>
             </li>
-            <li class="photousers_item">
+            <li class="photousers__item">
               <blockquote class="photousers__comment">
                 <a class="photousers__link" href="#">
                   <div class="photousers__photocontainer">
@@ -171,7 +171,7 @@
                 </div>
               </blockquote>
             </li>
-            <li class="photousers_item">
+            <li class="photousers__item">
               <blockquote class="photousers__comment">
                 <a class="photousers__link" href="#">
                   <div class="photousers__photocontainer">
@@ -202,7 +202,7 @@
               <source media="(min-width: 660px)" srcset="img/winter-tablet.jpg 1x, img/winter-tablet@2x.jpg 2x">
               <img class="userload__photo" src="img/winter-mobile.jpg" srcset="img/winter-mobile.jpg 1x, img/winter-mobile@2x.jpg 2x" alt="ваше изображение">
             </picture>
-            <ul class="userload__filterlist">
+            <ul class="userload__filterlist filterlist">
               <li class="filterlist__item">
                 <button class="filterlist__buttonscale" type="button" tabindex="1">
                   <svg class="userload__filtericonscale userload__filtericonscale--current" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,9 +225,9 @@
                 </button>
               </li>
             </ul>
-            <ul class="userload__scalelist">
+            <ul class="userload__scalelist scalelist">
               <li class="scalelist__item">
-                <div class="userload__scale scale--current">
+                <div class="userload__scale userload__scale--current">
                   <div class="userload__bar">
                 </div>
                 <div class="userload__toggle"></div>
@@ -237,20 +237,20 @@
                 <div class="userload__scale">
                   <div class="userload__bar">
                 </div>
-                <div class="userload__toggle toggle--saturation"></div>
+                <div class="userload__toggle userload__toggle--saturation"></div>
                 </div>
               </li>
               <li class="scalelist__item">
                 <div class="userload__scale">
                   <div class="userload__bar">
                 </div>
-                <div class="userload__toggle toggle--contrast"></div>
+                <div class="userload__toggle userload__toggle--contrast"></div>
                 </div>
               </li>
             </ul>
-            <div class="userload_buttonwrapper">
+            <div class="userload__buttonwrapper">
               <button class="userload__button" type="submit">Запостить</button>
-              <button class="userload__button button--cancel" type="reset" disabled>Отмена</button>
+              <button class="userload__button userload__button--cancel" type="reset" disabled>Отмена</button>
             </div>
           </div>
         </div>
@@ -264,7 +264,7 @@
         <svg class="page-footer__logodesktop">
           <use xlink:href="img/sprite.svg#logofooterdesktop"></use>
         </svg>
-        <div class="page-footer__social">
+        <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
